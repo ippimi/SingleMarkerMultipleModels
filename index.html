@@ -16,10 +16,10 @@
 </style>
 
   <div class ="div1">
+    
 <button class="button" id="btn1">Model1</button>
 <button class="button" id="btn2">Model2</button>
-
-
+<button class="button" id="btn3">Model3</button>
 </div>
 
 <body style='margin:10px; overflow: hidden;'></body>
@@ -56,6 +56,14 @@ document.getElementById("btn2").addEventListener("click", (e) => {
 var test = document.querySelector('#entityID1');
 
 test.setAttribute("obj-model", 'obj:url(cat/cat.obj);mtl:url(cat/cat.mtl)');
+test.setAttribute("scale",'.01 .01 .01');
+
+})
+          document.getElementById("btn1").addEventListener("click", (e) => {
+
+var test = document.querySelector('#entityID1');
+
+test.setAttribute("obj-model", 'obj:url(bear/bear.obj);mtl:url(bear/bear.mtl)');
 test.setAttribute("scale",'.01 .01 .01');
 
 })
