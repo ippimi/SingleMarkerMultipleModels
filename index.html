@@ -30,7 +30,7 @@
       <a-marker preset="hiro">
         
         
-     <a-entity id="entityID1" obj-model="obj:url(dog/dog.obj);mtl:url(dog/dog.mtl)"  scale=".01 .01 .01">
+     <a-entity id="entityID1" obj-model="obj:url(kangaroo/kangaroo.obj);mtl:url(kangaroo/kangaroo.mtl)"  scale=".01 .01 .01">
        
             </a-marker>
 
@@ -39,7 +39,14 @@
 
         <script>
             
+document.getElementById("btn1").addEventListener("click", (e) => {
 
+var test = document.querySelector('#entityID1');
+
+test.setAttribute("obj-model", 'obj:url(kangaroo/kangaroo.obj);mtl:url(kangaroo/kangaroo.mtl)');
+test.setAttribute("scale",'.01 .01 .01');
+
+})
                                                                                                     
                                                                                                                      
         document.getElementById("btn3").addEventListener("click", (e) => {
