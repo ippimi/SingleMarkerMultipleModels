@@ -22,13 +22,19 @@
 
 </div>
 
-<body style='margin:10px; overflow: hidden;'>
+<body style='margin:10px; overflow: hidden;'></body>
   
   <a-scene embedded arjs="debugUIEnabled: false;" vr-mode-ui="enabled: false">
   
 
       <a-marker preset="hiro">
      <a-entity id="entityID1" gltf-model="url(articuno/scene.gltf)" scale=".3 .3 .3">
+       
+            </a-marker>
+
+    <a-entity camera></a-entity>
+  </a-scene>
+
         <script>
             
          
@@ -52,8 +58,4 @@ test.setAttribute("scale",'.1 .1 .1');
 
 })
         </script>
-      </a-marker>
-
-    <a-entity camera></a-entity>
-  </a-scene>
-</body>
+ 
